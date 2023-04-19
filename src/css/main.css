@@ -1,0 +1,59 @@
+body {
+  font-size: 20px;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 75px;
+  background-color: white;
+  border: 1px black solid;
+}
+
+#hex {
+  font: inherit;
+  text-align: center;
+  width: 50%;
+  border: 0;
+}
+
+#hex:focus {
+  outline: none;
+}
+
+#hex::placeholder {
+  font: inherit;
+}
+
+#hex:focus::placeholder {
+  opacity: 0;
+}
+
+.rgb {
+  flex-basis: 75px;
+  line-height: 75px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  opacity: 50%;
+}
